@@ -13,6 +13,7 @@ public class Algorithms {
     Sheet sheet;
     Shelf shelf = new Shelf();
     private int sheetNumber;
+    private int shelfNumber;
 
     public int getSheetNumber() {
         return sheetNumber;
@@ -43,33 +44,7 @@ public class Algorithms {
          * of 300 and a height of 250 as specified in the Main.Sheet class)
          */
         List <Sheet> usedSheets = new ArrayList <Sheet>();
-        usedSheets.add(new Sheet()); //creating the first sheet index 0
 
-
-        for (Shape shape : shapes) {
-
-
-            while (usedSheets.get(sheetNumber).allShelvesHeight() < usedSheets.get(sheetNumber).getHeight()) {
-                //Create new shelf
-                usedSheets.get(sheetNumber).addShelf(new Shelf());
-
-
-                for (Shelf shelf : usedSheets.get(sheetNumber).getShelves()) {
-                    if (shape.getWidth() + shelf.getWidth() < sheet.getWidth() && shape.getHeight() <= shelf.getHeight()) {
-                        shelf.place(shape);
-                    }
-
-                    // Applying Rule B
-                    else if (shape.getHeight() + shelf.getWidth() < sheet.getWidth() && shape.getWidth() <= shelf.getHeight()) {
-                        shape.rotate();
-                        shelf.place(shape);
-                    } else {
-                    }
-                }
-            }
-            usedSheets.add(new Sheet());
-            sheetNumber++;
-        }
         /*
          * Add in your own code so that the method will place all the shapes
          * according to NextFit under ALL the assumptions mentioned in the
@@ -101,6 +76,37 @@ public class Algorithms {
 
         List <Sheet> usedSheets = new ArrayList <Sheet>();
 
+        usedSheets.add(new Sheet()); //creating the first sheet index 0
+        //Create first shelf
+        usedSheets.get(sheetNumber).addShelf(new Shelf());
+
+        //Accessing that first shelf
+        Shelf shelf = usedSheets.get(sheetNumber).getShelves().get(shelfNumber);
+
+        int sheetHeight = usedSheets.get(sheetNumber).getHeight();
+        int sheetWidth = usedSheets.get(sheetNumber).getWidth();
+        //Check if there is space or not
+        boolean thereIsSpace = usedSheets.get(sheetNumber).allShelvesHeight() < sheetHeight;
+
+
+        for (Shape shape : shapes) {
+            while (thereIsSpace) {
+                if (shape.getWidth() + shelf.getWidth() < sheet.getWidth() && shape.getHeight() <= shelf.getHeight()) {
+                    shelf.place(shape);
+                }
+                // Applying Rule B
+                else if (shape.getHeight() + shelf.getWidth() < sheet.getWidth() && shape.getWidth() <= shelf.getHeight()) {
+                    shape.rotate();
+                    shelf.place(shape);
+                } else if (shape.getWidth() + shelf.getWidth() > sheetWidth && shelf.getHeight() < sheetHeight) {
+                    usedSheets.get(sheetNumber).addShelf(new Shelf());
+                    shelfNumber++;
+
+                }
+            }
+        }
+        usedSheets.add(new Sheet());
+        sheetNumber++;
         /*
          * Add in your own code so that the method will place all the shapes
          * according to FirstFit under the assumptions mentioned in the spec
