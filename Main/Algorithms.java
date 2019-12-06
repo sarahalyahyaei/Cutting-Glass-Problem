@@ -12,9 +12,10 @@ import java.util.List;
 
 public class Algorithms {
     private Sheet sheet;
-    Shelf shelf = new Shelf();
     private int sheetNumber;
     private int shelfNumber;
+    boolean noOfShapesLessThan20;
+    int numberOfCurrentShapes;
 
     public int getSheetNumber() {
         return sheetNumber;
@@ -95,11 +96,22 @@ public class Algorithms {
 
         boolean thereIsSpace = usedSheets.get(sheetNumber).allShelvesHeight() < sheetHeight;  //Check if there is space on the sheet or not
 
+        //Calculate number of shapes in that sheet
+        for (Shelf shelves : usedSheets.get(sheetNumber).getShelves()) {
+            numberOfCurrentShapes = +shelves.getShapes().size();
+        }
+        if (numberOfCurrentShapes <= 20) {
+            noOfShapesLessThan20 = true;
+        }
+
+
 
         //Loop through all shapes
         for (Shape shape : shapes) {
-            while (thereIsSpace) {
-                if (shape.getWidth() + shelf.getWidth() < sheet.getWidth() && shape.getHeight() <= shelf.getHeight()) {
+            while (thereIsSpace && noOfShapesLessThan20) {
+                //Condition 1- if that shape added to that shelf width and their result is still less than sheet width and that shape's height is not bigger than
+                // shelf height than that shape can be added to the sheet
+                if (shape.getWidth() + shelf.getWidth() < sheetWidth && shape.getHeight() <= shelf.getHeight()) {
                     shelf.place(shape);
                 }
                 // Applying Rule B
