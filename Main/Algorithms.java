@@ -1,4 +1,5 @@
-package Main; /**
+package Main;
+/**
  * @Purpose: The Main.Algorithms class contains the two algorithms you have to implement
  * Do NOT modify the names and signatures of the two algorithm methods
  * @author RYK
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Algorithms {
-    Sheet sheet;
+    private Sheet sheet;
     Shelf shelf = new Shelf();
     private int sheetNumber;
     private int shelfNumber;
@@ -43,7 +44,7 @@ public class Algorithms {
          * Start with an empty list of sheets (remember each sheet has a width
          * of 300 and a height of 250 as specified in the Main.Sheet class)
          */
-        List <Sheet> usedSheets = new ArrayList <Sheet>();
+        List <Sheet> usedSheets = new ArrayList <>();
 
         /*
          * Add in your own code so that the method will place all the shapes
@@ -74,21 +75,28 @@ public class Algorithms {
          * of 300 and a height of 250 as specified in the Main.Sheet class)
          */
 
-        List <Sheet> usedSheets = new ArrayList <Sheet>();
+        List <Sheet> usedSheets = new ArrayList <>();
 
+        /**
+         * Creating first sheet and first shelf
+         */
         usedSheets.add(new Sheet()); //creating the first sheet index 0
-        //Create first shelf
-        usedSheets.get(sheetNumber).addShelf(new Shelf());
-
-        //Accessing that first shelf
-        Shelf shelf = usedSheets.get(sheetNumber).getShelves().get(shelfNumber);
-
-        int sheetHeight = usedSheets.get(sheetNumber).getHeight();
-        int sheetWidth = usedSheets.get(sheetNumber).getWidth();
-        //Check if there is space or not
-        boolean thereIsSpace = usedSheets.get(sheetNumber).allShelvesHeight() < sheetHeight;
+        usedSheets.get(sheetNumber).addShelf(new Shelf());  //Create first shelf
 
 
+        Shelf shelf = usedSheets.get(sheetNumber).getShelves().get(shelfNumber); //Accessing all shelves
+
+        /**
+         * accessing height and width of sheet
+         */
+        int sheetHeight = sheet.getHeight();
+        int sheetWidth = sheet.getWidth();
+
+
+        boolean thereIsSpace = usedSheets.get(sheetNumber).allShelvesHeight() < sheetHeight;  //Check if there is space on the sheet or not
+
+
+        //Loop through all shapes
         for (Shape shape : shapes) {
             while (thereIsSpace) {
                 if (shape.getWidth() + shelf.getWidth() < sheet.getWidth() && shape.getHeight() <= shelf.getHeight()) {
@@ -101,7 +109,6 @@ public class Algorithms {
                 } else if (shape.getWidth() + shelf.getWidth() > sheetWidth && shelf.getHeight() < sheetHeight) {
                     usedSheets.get(sheetNumber).addShelf(new Shelf());
                     shelfNumber++;
-
                 }
             }
         }
