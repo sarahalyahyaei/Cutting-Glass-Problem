@@ -69,9 +69,8 @@ public class Shape implements Comparable <Shape> {
 
     public void rotate() {
         int tem = sHeight;
-        sHeight = sWidth;
-        sWidth = tem;
-
+        this.sHeight = sWidth;
+        this.sWidth = tem;
     }
 
 

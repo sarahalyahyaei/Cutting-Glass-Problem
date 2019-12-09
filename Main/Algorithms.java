@@ -71,65 +71,62 @@ public class Algorithms {
 
             if (usedSheets.size() == 0) {
                 usedSheets.add(new Sheet());
-                keepTrackingOfSheetNumbers = 0;
+                keepTrackingOfSheetNumbers = 0; //new shelf on new sheet
                 usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
                 usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(0).place(shape);
-
-            } else if (shape.getHeight() == 250 && shape.getWidth() == 300) {
-                usedSheets.add(new Sheet());
-                ++keepTrackingOfSheetNumbers;
-                keepTrackingOfShelfsNumbers = 0;
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().add(new Shelf());
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).place(shape);
 
             } else if (shape.getHeight() == 300 && shape.getWidth() == 250) {
                 shape.rotate();
                 usedSheets.add(new Sheet());
                 ++keepTrackingOfSheetNumbers;
                 usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
-                keepTrackingOfShelfsNumbers = 0;
+                keepTrackingOfShelfsNumbers = 0; //new shelf on new sheet
                 usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).place(shape);
-
-
             }
             /**
-             * This condition: if the shelves on the sheet plus the shape that we want to add will be equal or bigger than 250
-             * and width of shape plus shelf width bigger than 300 or shapes are larger than 20 shape than create new sheet
+             * This condition: if shelves height plust the new shape height will exceed the height limit than create new sheet
+             * or if number of shapes on that sheet exceed the max number of shapes
              */
-            else if ((usedSheets.get(keepTrackingOfSheetNumbers).allShelvesHeight() + shape.getHeight() >= 250 && shape.getWidth() + usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).getWidth() >= 300)
+            else if ((usedSheets.get(keepTrackingOfSheetNumbers).allShelvesHeight() + shape.getHeight() >= 250 && shape.getWidth() + usedSheets.get(keepTrackingOfSheetNumbers).allShelvesHeight() >= 250)
                     || usedSheets.get(keepTrackingOfSheetNumbers).getShapeLimit() >= 20) {
                 usedSheets.add(new Sheet());
                 ++keepTrackingOfSheetNumbers;
                 usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
                 keepTrackingOfShelfsNumbers = 0;
                 usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).place(shape);
-
             }
             /**
              * This condition will be true if the width of the shape plus that shelf still got a space left will equal less than 300
              * and height equal or less than shelf height than place that shape on the shelf
              */
-            else if (shape.getWidth() + usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).getWidth() <= 300 &&
+            else if (shape.getWidth() + usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).getWidth() <= 300 ||
                     shape.getHeight() <= usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).getHeight()) {
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).place(shape);
+                if (shape.getHeight() + usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).getWidth() <= 300 && shape.getWidth() <= usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).getHeight()) {
+                    shape.rotate();
+                    usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).place(shape);
+                } else if (shape.getHeight() + usedSheets.get(keepTrackingOfSheetNumbers).allShelvesHeight() < 250) {
+                    usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
+                    ++keepTrackingOfShelfsNumbers;
+                    usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).place(shape);
+                } else {
+                    usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).place(shape);
+                }
             }
             //   else if(usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).getWidth() == 300 && usedSheets.get(keepTrackingOfSheetNumbers).allShelvesHeight()+shape.getHeight() < 250){
 
             //    }
-            //
+//
             /**
              * This condition will terminate if there is still a space on sheet height and shape can be added to that sheet if height shape plus
              * all shelves height won't exceed the max sheet height
              */
             else {
-                usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
-                ++keepTrackingOfShelfsNumbers;
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfsNumbers).place(shape);
+
             }
 
         }
         System.out.println(keepTrackingOfSheetNumbers);
-        return usedSheets;
 
+        return usedSheets;
     }
 }
