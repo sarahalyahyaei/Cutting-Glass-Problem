@@ -23,6 +23,7 @@ public class Sheet {
      * empty constructor
      */
     public Sheet() {
+
     }
 
     /**
@@ -32,6 +33,7 @@ public class Sheet {
     public void addShelf(Shelf shelf) {
         shelves.add(shelf);
     }
+
 
     /**
      * @return height of all shelves in a sheet
@@ -52,6 +54,13 @@ public class Sheet {
         return total;
     }
 
+    public int getShapeLimit() {
+        int total = 0;
+        for (Shelf shelf : this.shelves) {
+            total += shelf.getShapes().size();
+        }
+        return total;
+    }
     /**
      * @return list of all shelves in a sheet
      */
@@ -74,7 +83,6 @@ public class Sheet {
     }
 
     public String toString() {
-
-        return "Sheet contains: " + getShelves();
+        return "Sheet contains: " + getShelves() + "\n";
     }
 }

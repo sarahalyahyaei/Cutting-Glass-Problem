@@ -68,7 +68,9 @@ public class Shelf {
 
     public String toString() {
         String toPrint;
-        toPrint = "Shapes that on the shelf: " + shapes;
+
+
+        toPrint = "\nShapes that on the shelf: " + getShapes() + "\n";
         return toPrint;
     }
 
