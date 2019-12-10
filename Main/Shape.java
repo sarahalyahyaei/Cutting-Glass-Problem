@@ -75,7 +75,7 @@ public class Shape implements Comparable <Shape> {
 
 
     public String toString() {
-        return "\nShape: Height =  " + getHeight() + " Width = " + getWidth();
+        return " Shape: Height =  " + getHeight() + " Width = " + getWidth();
     }
 
 }
