@@ -123,7 +123,6 @@ public class Algorithms {
      * to retrieve the total number of sheets used
      **/
     public List <Sheet> firstFit(List <Shape> shapes) {
-
         int keepTrackingOfShelfNumber = 0;
         //Loop through shapes
         for (Shape shape : shapes) {
@@ -132,13 +131,6 @@ public class Algorithms {
                 usedSheetsFF.add(new Sheet());
                 //create first shelf
                 usedSheetsFF.get(keepTrackingOfSheetNumberFF).addShelf(new Shelf());
-                usedSheetsFF.get(keepTrackingOfSheetNumberFF).getShelves().get(keepTrackingOfShelfNumber).place(shape);
-            } else if (shape.getHeight() == 300 && shape.getWidth() == 250) {
-                shape.rotate();
-                usedSheetsFF.add(new Sheet());
-                ++keepTrackingOfSheetNumberFF;
-                usedSheetsFF.get(keepTrackingOfSheetNumberFF).addShelf(new Shelf());
-                keepTrackingOfShelfNumber = 0; //new shelf on new sheet
                 usedSheetsFF.get(keepTrackingOfSheetNumberFF).getShelves().get(keepTrackingOfShelfNumber).place(shape);
             }
             //This condition will check if there are still sheets that have a space to add new shape on it
@@ -172,33 +164,6 @@ public class Algorithms {
                     thereIsSpeace = true;
                     break;
                 }
-                /**
-                 * Ignore these following comments
-                 */
-                //This condition hopefully will correct the error that is occur on my fourth test in correctness test
-//                else if(usedSheetsFF.get(sheet).getShelves().size() > 1) {
-//                    for (int shelf1 = 1; shelf1 < usedSheetsFF.get(sheet).getShelves().size(); shelf++) {
-//                        if (shape.getHeight() <= usedSheetsFF.get(sheet).getShelves().get(shelf1).getHeight()
-//                                && shape.getWidth() + usedSheetsFF.get(sheet).getShelves().get(shelf1).getWidth() <= 300) {
-//                            usedSheetsFF.get(sheet).getShelves().get(shelf).place(shape);
-//                            thereIsSpeace = true;
-//                            break;
-//                        } else if (shape.getWidth() <= usedSheetsFF.get(sheet).getShelves().get(shelf).getHeight() &&
-//                                shape.getHeight() + usedSheetsFF.get(sheet).getShelves().get(shelf).getWidth() <= 300) {
-//                            shape.rotate();
-//                            usedSheetsFF.get(sheet).getShelves().get(shelf).place(shape);
-//                            thereIsSpeace = true;
-//                            break;
-//                        } else {
-//                            continue;
-//                        }
-//                    }
-//                }
-//                else if (shape.getWidth() + usedSheetsFF.get(sheet).getShelves().get(shelf).getWidth() > 300
-//                        && shape.getHeight() + usedSheetsFF.get(sheet).allShelvesHeight() <= 250){
-//                   break;
-//                }
-
                 else if (shape.getWidth() + usedSheetsFF.get(sheet).getShelves().get(shelf).getWidth() > 300
                         && shape.getHeight() + usedSheetsFF.get(sheet).allShelvesHeight() <= 250) {
                     usedSheetsFF.get(sheet).addShelf(new Shelf());
@@ -206,14 +171,6 @@ public class Algorithms {
                     thereIsSpeace = true;
                     break;
                 }
-//                else if (shape.getHeight() + usedSheetsFF.get(sheet).getShelves().get(shelf).getWidth() > 300
-//                        && shape.getWidth() + usedSheetsFF.get(sheet).allShelvesHeight() <= 250) {
-//                    shape.rotate();
-//                    usedSheetsFF.get(sheet).addShelf(new Shelf());
-//                    usedSheetsFF.get(sheet).getShelves().get(usedSheetsFF.get(sheet).getShelves().size() - 1).place(shape);
-//                    thereIsSpeace = true;
-//                    break;
-//                }
                 /**
                  * Else here will iterate through every sheet if there is no space and maybe there is space in other sheets
                  */
@@ -223,7 +180,6 @@ public class Algorithms {
                 }
             }
         }
-
         return thereIsSpeace;
     }
 }

@@ -6,7 +6,7 @@ package Main;
  * SIGNITURE OF EXISTING METHODS, You may add additional methods if
  * you wish
  * @since 30/10/2019
- * extended by @author Sarah Al Yahyaei
+ * extended by  Sarah Al Yahyaei
  **/
 
 public class Shape implements Comparable <Shape> {
@@ -51,16 +51,11 @@ public class Shape implements Comparable <Shape> {
         // You may want to implement this method
         if (this.sHeight < o.sHeight) {
             return -1;
-        } else if (this.sWidth < o.sWidth) {
-            return -1;
-        }
-
-        if (this.sHeight > o.sHeight) {
+        } else if (this.sHeight > o.sHeight) {
             return 1;
-        } else if (this.sWidth > o.sWidth) {
-            return 1;
+        } else {
+            return 0;
         }
-        return 0;
     }
 
     /**

@@ -3,7 +3,7 @@ package Main; /**
  * DO NOT MODIFY THE EXISTING METHODS SIGNITURE, You may add additional methods if you wish
  * @author RYK
  * @since 30/10/2019
- * extended by @author Sarah AlYahyaei
+ * extended by  Sarah AlYahyaei
  */
 
 import java.util.ArrayList;
