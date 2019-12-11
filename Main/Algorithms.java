@@ -11,7 +11,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Algorithms {
-    List <Sheet> usedSheetsFF = new ArrayList <>();
+    private List <Sheet> usedSheetsFF = new ArrayList <>();
+    private int keepTrackingOfSheetNumbersNF = 0; //To keep tracking the sheet numbers for Next Fit
+    private int keepTrackingOfSheetNumberFF = 0;  //To keep tracking the sheet numbers for Next Fit
+
+
+    public int getKeepTrackingOfSheetNumbersNF() {
+        return keepTrackingOfSheetNumbersNF;
+    }
+
+    public int getKeepTrackingOfSheetNumberFF() {
+        return keepTrackingOfSheetNumberFF;
+    }
 
     /**
      * This method is used to implement the next fit algorithm
@@ -29,28 +40,20 @@ public class Algorithms {
 
     public List <Sheet> nextFit(List <Shape> shapes) {
 
-        /*
-         * Start with an empty list of sheets (remember each sheet has a width
-         * of 300 and a height of 250 as specified in the Main.Sheet class)
-         */
         List <Sheet> usedSheets = new ArrayList <>();
 
-        /*
-         * Add in your own code so that the method will place all the shapes
-         * according to NextFit under ALL the assumptions mentioned in the
-         * specification
-         */
-        int keepTrackingOfSheetNumbers = 0;
-        int keepTrackingOfShelfNumbers = 0;
+        int keepTrackingOfShelfNumbers = 0; //Tracking shelf numbers for each sheet
 
+        //Loop through all shapes
         for (Shape shape : shapes) {
-
+            //If there is no sheets yet than create one
             if (usedSheets.size() == 0) {
                 usedSheets.add(new Sheet());
-                keepTrackingOfSheetNumbers = 0; //new shelf on new sheet
-                usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(0).place(shape);
+                keepTrackingOfSheetNumbersNF = 0; //new shelf on new sheet
+                usedSheets.get(keepTrackingOfSheetNumbersNF).addShelf(new Shelf());
+                usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(0).place(shape);
             }
+
             /**
              * The following conditions apply the rules from A-F
              */
@@ -58,53 +61,51 @@ public class Algorithms {
             else if (shape.getHeight() == 300 && shape.getWidth() == 250) {
                 shape.rotate();
                 usedSheets.add(new Sheet());
-                ++keepTrackingOfSheetNumbers;
-                usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
+                ++keepTrackingOfSheetNumbersNF;
+                usedSheets.get(keepTrackingOfSheetNumbersNF).addShelf(new Shelf());
                 keepTrackingOfShelfNumbers = 0; //new shelf on new sheet
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
-            } else if (shape.getWidth() + usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).getWidth() <= 300 &&
-                    shape.getHeight() <= usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).getHeight() &&
-                    usedSheets.get(keepTrackingOfSheetNumbers).getShapeLimit() < 20) {
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
-            } else if (shape.getHeight() + usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).getWidth() <= 300
-                    && shape.getWidth() <= usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).getHeight()
-                    && usedSheets.get(keepTrackingOfSheetNumbers).getShapeLimit() < 20) {
+                usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
+            } else if (shape.getWidth() + usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).getWidth() <= 300 &&
+                    shape.getHeight() <= usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).getHeight() &&
+                    usedSheets.get(keepTrackingOfSheetNumbersNF).getShapeLimit() < 20) {
+                usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
+            } else if (shape.getHeight() + usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).getWidth() <= 300
+                    && shape.getWidth() <= usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).getHeight()
+                    && usedSheets.get(keepTrackingOfSheetNumbersNF).getShapeLimit() < 20) {
                 shape.rotate();
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
-            } else if (shape.getWidth() + usedSheets.get(keepTrackingOfSheetNumbers).allShelvesHeight() < 250 &&
-                    usedSheets.get(keepTrackingOfSheetNumbers).getShapeLimit() < 20) {
-                shape.rotate();
-                usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
+                usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
+            } else if ((shape.getHeight() > usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).getHeight()
+                    && shape.getHeight() + usedSheets.get(keepTrackingOfSheetNumbersNF).allShelvesHeight() <= 250 &&
+                    usedSheets.get(keepTrackingOfSheetNumbersNF).getShapeLimit() < 20)) {
+                usedSheets.get(keepTrackingOfSheetNumbersNF).addShelf(new Shelf());
                 ++keepTrackingOfShelfNumbers;
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
-            } else if ((shape.getHeight() > usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).getHeight()
-                    && shape.getHeight() + usedSheets.get(keepTrackingOfSheetNumbers).allShelvesHeight() <= 250 &&
-                    usedSheets.get(keepTrackingOfSheetNumbers).getShapeLimit() < 20)) {
-                usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
-                ++keepTrackingOfShelfNumbers;
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
+                usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
 
-            } else if ((shape.getHeight() + usedSheets.get(keepTrackingOfSheetNumbers).allShelvesHeight() <= 250)
-                    && usedSheets.get(keepTrackingOfSheetNumbers).getShapeLimit() < 20) {
-                usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
+            } else if (shape.getWidth() + usedSheets.get(keepTrackingOfSheetNumbersNF).allShelvesHeight() < 250 &&
+                    usedSheets.get(keepTrackingOfSheetNumbersNF).getShapeLimit() < 20) {
+                shape.rotate();
+                usedSheets.get(keepTrackingOfSheetNumbersNF).addShelf(new Shelf());
                 ++keepTrackingOfShelfNumbers;
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
+                usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
+            } else if ((shape.getHeight() + usedSheets.get(keepTrackingOfSheetNumbersNF).allShelvesHeight() <= 250)
+                    && usedSheets.get(keepTrackingOfSheetNumbersNF).getShapeLimit() < 20) {
+                usedSheets.get(keepTrackingOfSheetNumbersNF).addShelf(new Shelf());
+                ++keepTrackingOfShelfNumbers;
+                usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
             }
-
             /**
              * This condition: if shelves height plus the new shape height will exceed the height limit than create new sheet
              * or if number of shapes on that sheet exceed the max number of shapes
              */
             else {
                 usedSheets.add(new Sheet());
-                ++keepTrackingOfSheetNumbers;
-                usedSheets.get(keepTrackingOfSheetNumbers).addShelf(new Shelf());
+                ++keepTrackingOfSheetNumbersNF;
+                usedSheets.get(keepTrackingOfSheetNumbersNF).addShelf(new Shelf());
                 keepTrackingOfShelfNumbers = 0; //Start new shelf
-                usedSheets.get(keepTrackingOfSheetNumbers).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
+                usedSheets.get(keepTrackingOfSheetNumbersNF).getShelves().get(keepTrackingOfShelfNumbers).place(shape);
             }
 
         }
-        System.out.println(++keepTrackingOfSheetNumbers);
         return usedSheets;
     }
 
@@ -123,22 +124,22 @@ public class Algorithms {
      **/
     public List <Sheet> firstFit(List <Shape> shapes) {
 
-        int keepTrackingOfSheetNumber = 0;
         int keepTrackingOfShelfNumber = 0;
+        //Loop through shapes
         for (Shape shape : shapes) {
             if (usedSheetsFF.size() == 0) {
                 // create first sheet
                 usedSheetsFF.add(new Sheet());
                 //create first shelf
-                usedSheetsFF.get(keepTrackingOfSheetNumber).addShelf(new Shelf());
-                usedSheetsFF.get(keepTrackingOfSheetNumber).getShelves().get(keepTrackingOfShelfNumber).place(shape);
+                usedSheetsFF.get(keepTrackingOfSheetNumberFF).addShelf(new Shelf());
+                usedSheetsFF.get(keepTrackingOfSheetNumberFF).getShelves().get(keepTrackingOfShelfNumber).place(shape);
             } else if (shape.getHeight() == 300 && shape.getWidth() == 250) {
                 shape.rotate();
                 usedSheetsFF.add(new Sheet());
-                ++keepTrackingOfSheetNumber;
-                usedSheetsFF.get(keepTrackingOfSheetNumber).addShelf(new Shelf());
+                ++keepTrackingOfSheetNumberFF;
+                usedSheetsFF.get(keepTrackingOfSheetNumberFF).addShelf(new Shelf());
                 keepTrackingOfShelfNumber = 0; //new shelf on new sheet
-                usedSheetsFF.get(keepTrackingOfSheetNumber).getShelves().get(keepTrackingOfShelfNumber).place(shape);
+                usedSheetsFF.get(keepTrackingOfSheetNumberFF).getShelves().get(keepTrackingOfShelfNumber).place(shape);
             }
             //This condition will check if there are still sheets that have a space to add new shape on it
             // instead of creating new sheet
@@ -146,12 +147,11 @@ public class Algorithms {
 
             } else {
                 usedSheetsFF.add(new Sheet());
-                ++keepTrackingOfSheetNumber;
-                usedSheetsFF.get(keepTrackingOfSheetNumber).addShelf(new Shelf());
-                usedSheetsFF.get(keepTrackingOfSheetNumber).getShelves().get(0).place(shape);
+                ++keepTrackingOfSheetNumberFF;
+                usedSheetsFF.get(keepTrackingOfSheetNumberFF).addShelf(new Shelf());
+                usedSheetsFF.get(keepTrackingOfSheetNumberFF).getShelves().get(0).place(shape);
             }
         }
-        System.out.println(++keepTrackingOfSheetNumber);
         return usedSheetsFF;
     }
 
@@ -159,28 +159,68 @@ public class Algorithms {
     public boolean checkIfOtherSheets(Shape shape) {
         boolean thereIsSpeace = false;
         for (int sheet = 0; sheet < usedSheetsFF.size(); sheet++) {
-            int lastShelf = usedSheetsFF.get(sheet).getShelves().size() - 1;
-            if (shape.getHeight() <= usedSheetsFF.get(sheet).getShelves().get(lastShelf).getHeight()
-                    && shape.getWidth() + usedSheetsFF.get(sheet).getShelves().get(lastShelf).getWidth() <= 300) {
-                usedSheetsFF.get(sheet).getShelves().get(lastShelf).place(shape);
-                thereIsSpeace = true;
-                break;
-            } else if (shape.getHeight() + usedSheetsFF.get(sheet).getShelves().get(lastShelf).getWidth() >= 300
-                    && shape.getWidth() + usedSheetsFF.get(sheet).allShelvesHeight() <= 250) {
-                shape.rotate();
-                usedSheetsFF.get(sheet).addShelf(new Shelf());
-                usedSheetsFF.get(sheet).getShelves().get(lastShelf + 1).place(shape);
-                thereIsSpeace = true;
-                break;
-            } else if (shape.getWidth() + usedSheetsFF.get(sheet).getShelves().get(lastShelf).getWidth() >= 300
-                    && shape.getHeight() + usedSheetsFF.get(sheet).allShelvesHeight() <= 250) {
-                usedSheetsFF.get(sheet).addShelf(new Shelf());
-                usedSheetsFF.get(sheet).getShelves().get(lastShelf + 1).place(shape);
-                thereIsSpeace = true;
-                break;
-            } else {
-                thereIsSpeace = false;
-                continue;
+            for (int shelf = 0; shelf < usedSheetsFF.get(sheet).getShelves().size(); shelf++) {
+                if (shape.getHeight() <= usedSheetsFF.get(sheet).getShelves().get(shelf).getHeight()
+                        && shape.getWidth() + usedSheetsFF.get(sheet).getShelves().get(shelf).getWidth() <= 300) {
+                    usedSheetsFF.get(sheet).getShelves().get(shelf).place(shape);
+                    thereIsSpeace = true;
+                    break;
+                } else if (shape.getWidth() <= usedSheetsFF.get(sheet).getShelves().get(shelf).getHeight() &&
+                        shape.getHeight() + usedSheetsFF.get(sheet).getShelves().get(shelf).getWidth() <= 300) {
+                    shape.rotate();
+                    usedSheetsFF.get(sheet).getShelves().get(shelf).place(shape);
+                    thereIsSpeace = true;
+                    break;
+                }
+                /**
+                 * Ignore these following comments
+                 */
+                //This condition hopefully will correct the error that is occur on my fourth test in correctness test
+//                else if(usedSheetsFF.get(sheet).getShelves().size() > 1) {
+//                    for (int shelf1 = 1; shelf1 < usedSheetsFF.get(sheet).getShelves().size(); shelf++) {
+//                        if (shape.getHeight() <= usedSheetsFF.get(sheet).getShelves().get(shelf1).getHeight()
+//                                && shape.getWidth() + usedSheetsFF.get(sheet).getShelves().get(shelf1).getWidth() <= 300) {
+//                            usedSheetsFF.get(sheet).getShelves().get(shelf).place(shape);
+//                            thereIsSpeace = true;
+//                            break;
+//                        } else if (shape.getWidth() <= usedSheetsFF.get(sheet).getShelves().get(shelf).getHeight() &&
+//                                shape.getHeight() + usedSheetsFF.get(sheet).getShelves().get(shelf).getWidth() <= 300) {
+//                            shape.rotate();
+//                            usedSheetsFF.get(sheet).getShelves().get(shelf).place(shape);
+//                            thereIsSpeace = true;
+//                            break;
+//                        } else {
+//                            continue;
+//                        }
+//                    }
+//                }
+//                else if (shape.getWidth() + usedSheetsFF.get(sheet).getShelves().get(shelf).getWidth() > 300
+//                        && shape.getHeight() + usedSheetsFF.get(sheet).allShelvesHeight() <= 250){
+//                   break;
+//                }
+
+                else if (shape.getWidth() + usedSheetsFF.get(sheet).getShelves().get(shelf).getWidth() > 300
+                        && shape.getHeight() + usedSheetsFF.get(sheet).allShelvesHeight() <= 250) {
+                    usedSheetsFF.get(sheet).addShelf(new Shelf());
+                    usedSheetsFF.get(sheet).getShelves().get(usedSheetsFF.get(sheet).getShelves().size() - 1).place(shape);
+                    thereIsSpeace = true;
+                    break;
+                }
+//                else if (shape.getHeight() + usedSheetsFF.get(sheet).getShelves().get(shelf).getWidth() > 300
+//                        && shape.getWidth() + usedSheetsFF.get(sheet).allShelvesHeight() <= 250) {
+//                    shape.rotate();
+//                    usedSheetsFF.get(sheet).addShelf(new Shelf());
+//                    usedSheetsFF.get(sheet).getShelves().get(usedSheetsFF.get(sheet).getShelves().size() - 1).place(shape);
+//                    thereIsSpeace = true;
+//                    break;
+//                }
+                /**
+                 * Else here will iterate through every sheet if there is no space and maybe there is space in other sheets
+                 */
+                else {
+                    thereIsSpeace = false;
+                    continue;
+                }
             }
         }
 
