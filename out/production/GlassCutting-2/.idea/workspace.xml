@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aca409af-824e-48b5-a98d-6925504ed684" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Main/PerformanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/Algorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Algorithms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/Sheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Sheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/Shelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Shelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/fsd.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main/fsd.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="230" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/SortedTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-160">
+              <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#SortedTest#0" expanded="true" />
+                <element signature="e#1221#1293#0" expanded="true" />
+                <element signature="e#1426#1462#0" expanded="true" />
+                <element signature="e#2196#2209#0" expanded="true" />
+                <element signature="e#2213#2249#0" expanded="true" />
+                <element signature="e#2971#2983#0" expanded="true" />
+                <element signature="e#2986#3022#0" expanded="true" />
+                <element signature="e#3746#3758#0" expanded="true" />
+                <element signature="e#3763#3799#0" expanded="true" />
+                <element signature="e#4541#4554#0" expanded="true" />
+                <element signature="e#4558#4594#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/PerformanceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3165#3733#0" expanded="true" />
+                <element signature="e#3638#3674#0" expanded="true" />
+                <element signature="e#4276#4289#0" expanded="true" />
+                <element signature="e#4293#4329#0" expanded="true" />
+                <element signature="e#4329#4341#0" expanded="true" />
+                <element signature="e#4344#4380#0" expanded="true" />
+                <element signature="e#4304#4316#0" expanded="true" />
+                <element signature="e#4321#4357#0" expanded="true" />
+                <element signature="e#4363#4376#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/Shape.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+              <folding>
+                <element signature="docComment;method#Shape#0;class#Shape#0" expanded="true" />
+                <element signature="docComment;method#getHeight#0;class#Shape#0" expanded="true" />
+                <element signature="docComment;method#getWidth#0;class#Shape#0" expanded="true" />
+                <element signature="e#1771#1772#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main/fsd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/Algorithms.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2640">
+              <caret line="181" column="9" selection-start-line="181" selection-start-column="9" selection-end-line="181" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#641#642#0" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="docComment;method#nextFit#0;class#Algorithms#0" expanded="true" />
+                <element signature="docComment;method#firstFit#0;class#Algorithms#0" expanded="true" />
+                <element signature="e#12433#12580#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/Sheet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#Sheet#0;class#Sheet#0" expanded="true" />
+                <element signature="docComment;method#addShelf#0;class#Sheet#0" expanded="true" />
+                <element signature="docComment;method#allShelvesHeight#0;class#Sheet#0" expanded="true" />
+                <element signature="docComment;method#getShelves#0;class#Sheet#0" expanded="true" />
+                <element signature="e#1598#1599#0" expanded="true" />
+                <element signature="e#1633#1634#0" expanded="true" />
+                <element signature="docComment;method#getHeight#0;class#Sheet#0" expanded="true" />
+                <element signature="docComment;method#getWidth#0;class#Sheet#0" expanded="true" />
+                <element signature="e#1868#1869#0" expanded="true" />
+                <element signature="e#1931#1932#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/Shelf.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#Shelf#0;class#Shelf#0" expanded="true" />
+                <element signature="docComment;method#getHeight#0;class#Shelf#0" expanded="true" />
+                <element signature="docComment;method#place#0;class#Shelf#0" expanded="true" />
+                <element signature="docComment;method#getShapes#0;class#Shelf#0" expanded="true" />
+                <element signature="e#1390#1391#0" expanded="true" />
+                <element signature="e#1419#1420#0" expanded="true" />
+                <element signature="docComment;method#getWidth#0;class#Shelf#0" expanded="true" />
+                <element signature="e#1508#1509#0" expanded="true" />
+                <element signature="e#1540#1541#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Sarah Al Yahyaei" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Algorithms.java" />
+        <option value="$PROJECT_DIR$/CorrectnessTest.java" />
+        <option value="$PROJECT_DIR$/PerformanceTest.java" />
+        <option value="$PROJECT_DIR$/Sheet.java" />
+        <option value="$PROJECT_DIR$/Shelf.java" />
+        <option value="$PROJECT_DIR$/SortedTest.java" />
+        <option value="$PROJECT_DIR$/Shape.java" />
+        <option value="$PROJECT_DIR$/GeneratorTest.java" />
+        <option value="$PROJECT_DIR$/Generator.java" />
+        <option value="$PROJECT_DIR$/Main/Generator.java" />
+        <option value="$PROJECT_DIR$/Main/dasdas.java" />
+        <option value="$PROJECT_DIR$/Main/jh.java" />
+        <option value="$PROJECT_DIR$/Test/GeneratorTest.java" />
+        <option value="$PROJECT_DIR$/Test/CorrectnessTest.java" />
+        <option value="$PROJECT_DIR$/Main/Algorithms.java" />
+        <option value="$PROJECT_DIR$/Main/Shape.java" />
+        <option value="$PROJECT_DIR$/Main/Sheet.java" />
+        <option value="$PROJECT_DIR$/Main/Shelf.java" />
+        <option value="$PROJECT_DIR$/Test/PerformanceTest.java" />
+        <option value="$PROJECT_DIR$/Main/PerformanceTest.java" />
+        <option value="$PROJECT_DIR$/Test/SortedTest.java" />
+        <option value="$PROJECT_DIR$/Main/SortedTest.java" />
+        <option value="$PROJECT_DIR$/Main/fsd.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1302" />
+    <option name="height" value="732" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GlassCutting-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GlassCutting-2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GlassCutting-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GlassCutting-2" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GlassCutting-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GlassCutting-2" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GlassCutting-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GlassCutting-2" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GlassCutting-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GlassCutting-2" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.PerformanceTest">
+    <configuration name="CorrectnessTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.CorrectnessTest" />
+      <module name="GlassCutting-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.GeneratorTest" />
+      <module name="GlassCutting-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerformanceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.PerformanceTest" />
+      <module name="GlassCutting-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortedTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.SortedTest" />
+      <module name="GlassCutting-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.fsd" />
+      <module name="GlassCutting-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PerformanceTest" />
+        <item itemvalue="Application.CorrectnessTest" />
+        <item itemvalue="Application.fsd" />
+        <item itemvalue="Application.SortedTest" />
+        <item itemvalue="Application.GeneratorTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aca409af-824e-48b5-a98d-6925504ed684" name="Default Changelist" comment="" />
+      <created>1575217929487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575217929487</updated>
+    </task>
+    <task id="LOCAL-00001" summary="trying to solve first fit">
+      <created>1575583097318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575583097318</updated>
+    </task>
+    <task id="LOCAL-00002" summary="trying to solve first fit">
+      <created>1575583176337</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575583176337</updated>
+    </task>
+    <task id="LOCAL-00003" summary="trying to solve first fit">
+      <created>1575648809002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575648809002</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Coding nice code this time to have 90 maybe this time">
+      <created>1575649453840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575649453840</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added new method to calulcate shapes numeber">
+      <created>1575650143375</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575650143375</updated>
+    </task>
+    <task id="LOCAL-00006" summary="the final corrected method xoxoxoxoxoxoox I am soooo happyyy now">
+      <created>1575897759485</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575897759485</updated>
+    </task>
+    <task id="LOCAL-00007" summary="the final corrected method xoxoxoxoxoxoox I am soooo happyyy now">
+      <created>1575899485741</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575899485741</updated>
+    </task>
+    <task id="LOCAL-00008" summary="still editing some logic experissionssss">
+      <created>1575910468548</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575910468548</updated>
+    </task>
+    <task id="LOCAL-00009" summary="final edit">
+      <created>1576006246584</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576006246584</updated>
+    </task>
+    <task id="LOCAL-00010" summary="final edit">
+      <created>1576072241748</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1576072241748</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24555735" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.36037442" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4958904" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.3296875" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32917318" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.328125" />
+      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.32328767" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.9059561" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Flutter Inspector" order="6" />
+      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Flutter Outline" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32471728" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info active="true" id="Run" order="7" visible="true" weight="0.28271407" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.3808219" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.3296875" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32917318" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.328125" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Flutter Inspector" order="6" />
+      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Flutter Outline" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="trying to solve first fit" />
+    <MESSAGE value="Coding nice code this time to have 90 maybe this time" />
+    <MESSAGE value="Added new method to calulcate shapes numeber" />
+    <MESSAGE value="the final corrected method xoxoxoxoxoxoox I am soooo happyyy now" />
+    <MESSAGE value="still editing some logic experissionssss" />
+    <MESSAGE value="final edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="final edit" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Test/CorrectnessTest.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GlassCutting_2$PerformanceTest.ic" NAME="PerformanceTest Coverage Results" MODIFIED="1576072155283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Test.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/GeneratorTest.java" />
+    <entry file="file://$PROJECT_DIR$/GlassCutting-2.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trying_to_solve_first_fit.patch">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="371" column="29" selection-start-line="371" selection-start-column="29" selection-end-line="371" selection-end-column="29" />
+          <folding>
+            <element signature="e#13877#13878#0" expanded="true" />
+            <element signature="e#13945#13946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/util/Preconditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="247" column="18" selection-start-line="247" selection-start-column="18" selection-end-line="247" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/dasdas.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="995" column="12" selection-start-line="995" selection-start-column="12" selection-end-line="995" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/jh.java" />
+    <entry file="file://$PROJECT_DIR$/Test/GeneratorTest.java" />
+    <entry file="file://$PROJECT_DIR$/Main/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;field#shapes#0;class#Generator#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding>
+            <element signature="docComment;method#Shape#0;class#Shape#0" expanded="true" />
+            <element signature="docComment;method#getHeight#0;class#Shape#0" expanded="true" />
+            <element signature="docComment;method#getWidth#0;class#Shape#0" expanded="true" />
+            <element signature="e#1771#1772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/Algorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="181" column="9" selection-start-line="181" selection-start-column="9" selection-end-line="181" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="docComment;method#nextFit#0;class#Algorithms#0" expanded="true" />
+            <element signature="docComment;method#firstFit#0;class#Algorithms#0" expanded="true" />
+            <element signature="e#12433#12580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/Sheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#Sheet#0;class#Sheet#0" expanded="true" />
+            <element signature="docComment;method#addShelf#0;class#Sheet#0" expanded="true" />
+            <element signature="docComment;method#allShelvesHeight#0;class#Sheet#0" expanded="true" />
+            <element signature="docComment;method#getShelves#0;class#Sheet#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="docComment;method#getHeight#0;class#Sheet#0" expanded="true" />
+            <element signature="docComment;method#getWidth#0;class#Sheet#0" expanded="true" />
+            <element signature="e#1868#1869#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/Shelf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#Shelf#0;class#Shelf#0" expanded="true" />
+            <element signature="docComment;method#getHeight#0;class#Shelf#0" expanded="true" />
+            <element signature="docComment;method#place#0;class#Shelf#0" expanded="true" />
+            <element signature="docComment;method#getShapes#0;class#Shelf#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="docComment;method#getWidth#0;class#Shelf#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/CorrectnessTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CorrectnessTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/PerformanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3165#3733#0" expanded="true" />
+            <element signature="e#3638#3674#0" expanded="true" />
+            <element signature="e#4276#4289#0" expanded="true" />
+            <element signature="e#4293#4329#0" expanded="true" />
+            <element signature="e#4329#4341#0" expanded="true" />
+            <element signature="e#4344#4380#0" expanded="true" />
+            <element signature="e#4304#4316#0" expanded="true" />
+            <element signature="e#4321#4357#0" expanded="true" />
+            <element signature="e#4363#4376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/SortedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#SortedTest#0" expanded="true" />
+            <element signature="e#1221#1293#0" expanded="true" />
+            <element signature="e#1426#1462#0" expanded="true" />
+            <element signature="e#2196#2209#0" expanded="true" />
+            <element signature="e#2213#2249#0" expanded="true" />
+            <element signature="e#2971#2983#0" expanded="true" />
+            <element signature="e#2986#3022#0" expanded="true" />
+            <element signature="e#3746#3758#0" expanded="true" />
+            <element signature="e#3763#3799#0" expanded="true" />
+            <element signature="e#4541#4554#0" expanded="true" />
+            <element signature="e#4558#4594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/fsd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -27,12 +27,16 @@ public class SortedTest {
         System.out.println("**************** Sorted Test ****************");
         System.out.println("*********************************************");
         System.out.println();
-
+        System.out.println("Test 1 with 10000 shapes");
         test1();
-        //  test2();
-        //  test3();
-        //  test4();
-        //   test5();
+        System.out.println("Test 2 with 20000 shapes");
+        test2();
+        System.out.println("Test 3 with 30000 shapes");
+        test3();
+        System.out.println("Test 4 with 40000 shapes");
+        test4();
+        System.out.println("Test 5 with 50000 shapes");
+        test5();
         /*
          * Generate a random shape list and then check the number of sheets used
          * when
@@ -51,16 +55,8 @@ public class SortedTest {
     }
 
     public static void test1() {
-        /**
-         * Test 1
-         * 1: Test 1.1
-         * 2: Test 1.2
-         * 3: Test 1.3
-         */
 
-        System.out.println("=================================Test 1 ========================== ");
-        System.out.println("Test 1.1:");
-
+        //  System.out.println("=================================Test 1 ========================== ");
         /**
          * Test for 10000 shapes
          */
@@ -72,13 +68,14 @@ public class SortedTest {
         algorithmsTest11.nextFit(test1);
         long endTime12 = new Date().getTime() - startTime11;
 
+        System.out.println("Next fit performance");
         System.out.println("Running time was: " + endTime12);
         System.out.println("Number of sheets: " + algorithmsTest11.getKeepTrackingOfSheetNumbersNF());
 
         long startTime122 = new Date().getTime();
         algorithmsTest11.firstFit(test1);
         long endTime122 = new Date().getTime() - startTime122;
-
+        System.out.println("First Fit performance");
         System.out.println("Running time was: " + endTime122);
         System.out.println("Number of sheets: " + algorithmsTest11.getKeepTrackingOfSheetNumberFF());
 
@@ -98,13 +95,14 @@ public class SortedTest {
         algorithmsTest21.nextFit(test2);
         long endTime12 = new Date().getTime() - startTime11;
 
+        System.out.println("Next fit performance");
         System.out.println("Running time was: " + endTime12);
         System.out.println("Number of sheets: " + algorithmsTest21.getKeepTrackingOfSheetNumbersNF());
 
         long startTime122 = new Date().getTime();
         algorithmsTest21.firstFit(test2);
         long endTime122 = new Date().getTime() - startTime122;
-
+        System.out.println("First Fit performance");
         System.out.println("Running time was: " + endTime122);
         System.out.println("Number of sheets: " + algorithmsTest21.getKeepTrackingOfSheetNumberFF());
 
@@ -124,12 +122,14 @@ public class SortedTest {
         algorithmsTest31.nextFit(test3);
         long endTime12 = new Date().getTime() - startTime11;
 
+        System.out.println("Next fit performance");
         System.out.println("Running time was: " + endTime12);
         System.out.println("Number of sheets: " + algorithmsTest31.getKeepTrackingOfSheetNumbersNF());
 
         long startTime122 = new Date().getTime();
         algorithmsTest31.firstFit(test3);
         long endTime122 = new Date().getTime() - startTime122;
+        System.out.println("First Fit performance");
 
         System.out.println("Running time was: " + endTime122);
         System.out.println("Number of sheets: " + algorithmsTest31.getKeepTrackingOfSheetNumberFF());
@@ -154,13 +154,14 @@ public class SortedTest {
         long startTime11 = new Date().getTime();
         algorithmsTest41.nextFit(test4);
         long endTime12 = new Date().getTime() - startTime11;
-
+        System.out.println("Next fit performance");
         System.out.println("Running time was: " + endTime12);
         System.out.println("Number of sheets: " + algorithmsTest41.getKeepTrackingOfSheetNumbersNF());
 
         long startTime122 = new Date().getTime();
         algorithmsTest41.firstFit(test4);
         long endTime122 = new Date().getTime() - startTime122;
+        System.out.println("First Fit performance");
 
         System.out.println("Running time was: " + endTime122);
         System.out.println("Number of sheets: " + algorithmsTest41.getKeepTrackingOfSheetNumberFF());
@@ -180,6 +181,7 @@ public class SortedTest {
         long startTime11 = new Date().getTime();
         algorithmsTest51.nextFit(test5);
         long endTime12 = new Date().getTime() - startTime11;
+        System.out.println("Next fit performance");
 
         System.out.println("Running time was: " + endTime12);
         System.out.println("Number of sheets: " + algorithmsTest51.getKeepTrackingOfSheetNumbersNF());
@@ -187,6 +189,7 @@ public class SortedTest {
         long startTime122 = new Date().getTime();
         algorithmsTest51.firstFit(test5);
         long endTime122 = new Date().getTime() - startTime122;
+        System.out.println("First Fit performance");
 
         System.out.println("Running time was: " + endTime122);
         System.out.println("Number of sheets: " + algorithmsTest51.getKeepTrackingOfSheetNumberFF());

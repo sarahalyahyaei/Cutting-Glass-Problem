@@ -57,11 +57,11 @@ public class PerformanceTest {
         int increment = 50000;
         test1();
 
-//		test2();
+        test2();
 
-        //	test3();
-        //	test4();
-        //	test5();
+        test3();
+        test4();
+        test5();
 
     }
 
